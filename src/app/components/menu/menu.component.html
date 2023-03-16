@@ -1,0 +1,30 @@
+<div id="menuBody" >
+    <h3 id="tituloMenu"> Seleccione la categoria para hacer el pedido</h3>
+    <br>
+   
+    <div  id="nav">
+    <div>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary" (click)="Pizzaseleccionado()">Pizzas</button>
+            <button type="button" class="btn btn-outline-primary"  (click)="Empanadaseleccionado()">Empanadas</button>
+            <button type="button" class="btn btn-outline-primary"  (click)="Bebidaseleccionado()">Bebidas</button>
+            <button type="button" class="btn btn-outline-primary"  (click)="Postreseleccionado()">Postres</button>
+          </div>
+         
+  
+    <br>
+
+    
+        <div id="switch" class="container" [ngSwitch]="seleccionado">
+            <div *ngSwitchCase="'Pizza'"> <app-pizzas></app-pizzas> </div>
+            <div *ngSwitchCase="'Empanada'"> <app-empanadas></app-empanadas> </div>
+            <div *ngSwitchCase="'Bebida'">  <app-bebidas></app-bebidas></div>
+            <div *ngSwitchCase="'Postre'"> <app-postre></app-postre> </div>
+            
+            <div *ngSwitchDefault style="color: blueviolet;text-align: center;"></div>
+        </div>
+        <br><br>
+    </div>
+</div>
+</div>
+
