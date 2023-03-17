@@ -5,7 +5,7 @@
             <th scope="col">Produto</th>
             <th scope="col">Precio</th>
             <th scope="col">Cantidad</th>           
-
+            <th scope="col">Agregar</th>
         </tr>
     </thead>
     <tbody>
@@ -13,35 +13,11 @@
             <td>  <img id="piza" src={{item.image}}  width="100px"></td> 
             <td><span>  {{item.nombre}}  </span></td> 
             <td> {{item.precio | currency: 'USD'}}</td>
-            <td>  <input  type="number" min="0"></td>
+            <td>  <input  type="number" min="0" [(ngModel)]="item.cantidad"></td>
+            <td> <button (click)="agregar(item)">Agregar</button></td>
         </tr>
     </tbody>
 
 </table>
 
 
-
-<!--
-    <tr>
-        <td> <img id="piza" src="../../../assets/images/muzzarella.jpg" alt="muzzarella.." width="100px"></td>        
-        <td><span>  Muzarella  </span></td> 
-        <td> $1100</td>
-        <td>  <input  type="number" min="0"></td>
-    </tr>
-
-      <tr>
-        <td> <img src="../../../assets/images/jamonymorron.jpg" alt="jamon y morron.." width="100px"></td>        
-        <td><span>   Especial de jamon y morrón   </span></td> 
-        <td> $1500</td>
-        <td>  <input  type="number" min="0"></td>
-    </tr>
-
-     <tr>
-        <td> <img src="../../../assets/images/napolitana.jpg" alt="napolitana.." width="100px"></td>        
-        <td><span>   Napolitana   </span></td> 
-        <td> $1300</td>
-        <td>  <input  type="number" min="0"></td>
-    </tr>
-
-
-</table>-->

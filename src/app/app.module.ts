@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListadoDeComidasComponent } from './pages/listado-de-comidas/listado-de-comidas.component';
 import { ConfirmacionDelPedidoComponent } from './pages/confirmacion-del-pedido/confirmacion-del-pedido.component';
 import { VistaDelPedidoComponent } from './pages/vista-del-pedido/vista-del-pedido.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,10 +26,12 @@ import { VistaDelPedidoComponent } from './pages/vista-del-pedido/vista-del-pedi
     ListadoDeComidasComponent,
     ConfirmacionDelPedidoComponent,
     VistaDelPedidoComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

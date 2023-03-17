@@ -1,1 +1,22 @@
-<p>empanadas works!</p>
+<table class="container m-2">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Produto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th> 
+            <th scope="col">Agregar</th>          
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of empanadas">
+            <td>  <img id="piza" src={{item.image}}  width="100px"></td> 
+            <td><span>  {{item.nombre}}  </span></td> 
+            <td> {{item.precio | currency: 'USD'}}</td>
+            <td>  <input  type="number" min="0" [(ngModel)]="item.cantidad"></td>
+            <td> <button (click)="agregar(item)">Agregar</button></td>
+        </tr>
+    </tbody>
+
+</table>
