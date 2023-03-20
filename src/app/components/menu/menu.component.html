@@ -1,6 +1,6 @@
 <div id="menuBody" >
     <h3 id="tituloMenu"> Seleccione la categoria para hacer el pedido</h3>
-    <br>
+    
    
     <div  id="nav">
     <div>
@@ -12,7 +12,6 @@
           </div>
          
   
-    <br>
 
     
         <div id="switch" class="container" [ngSwitch]="seleccionado">
@@ -23,8 +22,11 @@
             
             <div *ngSwitchDefault style="color: blueviolet;text-align: center;"></div>
         </div>
-        <br><br>
+       
+        <button id="finalizar" class="btn btn-warning" (click)="VerPedido()">Finalizar pedido</button>
+        
     </div>
+    
 </div>
 </div>
 

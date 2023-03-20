@@ -2,9 +2,6 @@
         margin-top: 0px;
         background-image: url('/assets/images/logo.jpg');
         background-repeat: repeat;
-      
-     
-    
 }
 .container{
     text-align: center;
@@ -16,7 +13,7 @@
 
 
 #switch{
-    width: 80%;
+    width: 90%;
 }
 
 #nav{
@@ -25,14 +22,28 @@
 }
 
 #tituloMenu{
+    background-color: #fff;
     color: blue;
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .btn-group{
+    height: 60px;
+    width: auto;
     background-color: #fff;
     font-style: italic;
+    font-size: 1.25rem;
     font-weight: bold !important;
 }
 
+#finalizar{
+    height: 80px;
+    width: 400px;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 30px;
+margin-bottom: 40px;
+
+}

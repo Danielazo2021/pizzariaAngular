@@ -8,8 +8,8 @@ import { PizzasComponent } from './components/pizzas/pizzas.component';
 import { EmpanadasComponent } from './components/empanadas/empanadas.component';
 import { BebidasComponent } from './components/bebidas/bebidas.component';
 import { PostreComponent } from './components/postre/postre.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ListadoDeComidasComponent } from './pages/listado-de-comidas/listado-de-comidas.component';
+
+
 import { ConfirmacionDelPedidoComponent } from './pages/confirmacion-del-pedido/confirmacion-del-pedido.component';
 import { VistaDelPedidoComponent } from './pages/vista-del-pedido/vista-del-pedido.component';
 import { FormsModule } from '@angular/forms';
@@ -22,8 +22,7 @@ import { FormsModule } from '@angular/forms';
     EmpanadasComponent,
     BebidasComponent,
     PostreComponent,
-    HomeComponent,
-    ListadoDeComidasComponent,
+    
     ConfirmacionDelPedidoComponent,
     VistaDelPedidoComponent
     

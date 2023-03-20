@@ -1,4 +1,4 @@
-<table class="container m-2">
+<table class="container">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -15,7 +15,7 @@
             <td><span>  {{item.nombre}}  </span></td> 
             <td> {{item.precio | currency: 'USD'}}</td>
             <td>  <input  type="number" min="0" [(ngModel)]="item.cantidad"></td>
-            <td> <button (click)="agregar(item)">Agregar</button></td>
+            <td> <button  class="btn btn-primary" (click)="agregar(item)">Agregar</button></td>
         </tr>
     </tbody>
 

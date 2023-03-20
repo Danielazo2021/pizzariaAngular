@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   seleccionado:string="";
-constructor(){}
+constructor(private router:Router){}
 ngOnInit(): void {
   
 }
@@ -33,5 +33,8 @@ ngOnInit(): void {
     this.seleccionado="Postre"
     console.log(this.seleccionado);
 
+  }
+  VerPedido(){
+    this.router.navigate(['/vista_del_pedido']);
   }
 }

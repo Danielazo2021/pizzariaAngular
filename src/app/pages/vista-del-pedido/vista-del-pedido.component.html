@@ -1,1 +1,31 @@
-<p>vista-del-pedido works!</p>
+<div>
+<h1 class="container">Atencion!!!   -  Revision del Pedido</h1>
+
+<table class="container m-2">
+    <thead>
+        <tr>
+           
+            <th scope="col">Produto</th>
+           
+            <th scope="col">Cantidad</th>           
+            <th scope="col">Precio</th>
+            <th scope="col">Total producto</th>
+            <th scope="col">Eliminar</th>
+        </tr>
+    </thead>
+                <tbody>
+            <tr *ngFor="let item of pedido; let i index">
+            <td> {{item.nombre}}</td>
+            <td> {{item.cantidad}}</td>
+            <td> {{item.precio}}</td>
+            <td *ngIf="item.cantidad"> {{(item.precio * item.cantidad)}}</td>
+            <td><button class="btn btn-primary" (click)="eliminarDelPedido(item)">Eliminar</button></td>
+            </tr>
+  </tbody>
+
+</table>
+<br>
+<button id="enviar" class="btn btn-danger" (click)="confirmar()">CONFIRMAR Y ENVIAR PEDIDO!!</button>
+<br>
+
+</div>

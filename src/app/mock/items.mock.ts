@@ -3,24 +3,19 @@ import { IItems } from "../interface/item.interface";
 export const PIZZAS:IItems[]=[
     {
     image: 'assets/images/muzzarella.jpg',
-    nombre: 'Muzzarella',
+    nombre: 'Pizza Muzzarella',
     precio:1100
 
-    }, {
-        image: 'assets/images/muzzarella.jpg',
-        nombre: 'Makusita',
-        precio:2100
-    
-        },
+    }, 
     {
         image: 'assets/images/jamonymorron.jpg',
-        nombre: 'Especial jamón y morrón',
+        nombre: 'Pizza Especial jamón y morrón',
         precio:1500
     
         },
         {
             image: 'assets/images/napolitana.jpg',
-            nombre: 'Napolitana',
+            nombre: 'Pizza Napolitana',
             precio:1300
         
             }
@@ -30,19 +25,19 @@ export const PIZZAS:IItems[]=[
 export const EMPANADAS:IItems[]=[
     {
     image: 'assets/images/empanada_atun.jpg',
-    nombre: 'Atún',
+    nombre: 'Empanada de Atún',
     precio: 140
 
     },
     {
         image: 'assets/images/empanada_carne.jpg',
-        nombre: 'Carne',
+        nombre: 'Empanada de Carne',
         precio: 140
     
         },
         {
             image: 'assets/images/empanada_jamonyqueso.jpg',
-            nombre: 'Jamón y Queso',
+            nombre: 'Empanada de Jamón y Queso',
             precio: 140
         
             }
